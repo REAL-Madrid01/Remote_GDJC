@@ -1,0 +1,4 @@
+small:width=[10,15], height=[20,25]. small剪切出的框贴近于小型船只
+
+medium:width=[50,60], height=[50,60]. medium剪切出的框贴近于中型船只
+3 way中normal方法medium：area_ratio=[0.01,0.05], small： area_ratio=[0.0001,0.001]

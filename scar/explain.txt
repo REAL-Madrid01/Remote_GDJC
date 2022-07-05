@@ -1,0 +1,16 @@
+此文件下配置参数:
+cutpaste:
+数据集为无船的7.5k张
+batch_size=15, epoch=10k, learing_rate=0.001
+使用width=[20,50],height=[50,100]，rotate=[-90,90]剪切框贴近于中形船
+使用scar,产生1个剪切框
+
+mask rcnn:
+数据集为有船的1k张 airbus
+迭代3k饱和
+resize=[768,768]与原图一致
+learning_rate=0.001,batch_size=8
+使用所有FPN特征图
+使用non-nms
+
+small&&parallel&&taitan&&dense分别为小船40张/船船并列20张/大船20张/多船30张 来自airbus
