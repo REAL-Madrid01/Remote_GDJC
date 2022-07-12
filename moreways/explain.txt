@@ -7,10 +7,13 @@ batch_size=15, epoch=10k, learing_rate=0.001
 
 mask rcnn:
 数据集为有船的1k张 airbus
-迭代14k饱和
+迭代15k饱和
 resize=[768,768]与原图一致
 learning_rate=0.001,batch_size=8
 使用所有FPN特征图
 使用non-nms
+
+anchor_morebig为改变anchor size to [128, 256, 512, 1024, 2048]，对大船的检测会好一些
+anchor_morebig文件夹下包含15k时的结果，和dense/taitan/small/parallel的检测结果
 
 small&&parallel&&taitan&&dense分别为小船40张/船船并列20张/大船20张/多船30张 来自airbus
